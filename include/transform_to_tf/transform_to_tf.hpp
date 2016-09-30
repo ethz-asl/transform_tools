@@ -35,7 +35,6 @@ class TransformToTf {
   TransformToTf(const ros::NodeHandle& nh, const ros::NodeHandle& nh_private);
 
  protected:
-
   // Subscribes and Advertises to the appropriate ROS topics
   void subscribeToTopics();
   void advertiseTopics();
@@ -62,12 +61,10 @@ class TransformToTf {
   // Stores the position of the current hoop in the world frame
   TransformationStamped transform_;
 
-
   // Parameters
   bool verbose_;
   std::string local_frame_name_;
   std::string global_frame_name_;
-
 };
 
 }  // namespace transform_to_tf
