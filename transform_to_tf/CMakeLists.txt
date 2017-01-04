@@ -14,8 +14,6 @@ cs_add_library(transform_to_tf
   src/library/transform_to_tf.cpp
 )
 
-# target_link_libraries(frame_aligner matlab_writer)
-
 cs_add_executable(transform_to_tf_node
   src/transform_to_tf_node.cpp
 )
