@@ -34,7 +34,7 @@ class TransformToTf {
   // Constructor
   TransformToTf(const ros::NodeHandle& nh, const ros::NodeHandle& nh_private);
 
- protected:
+ private:
   // Subscribes and Advertises to the appropriate ROS topics
   void subscribeToTopics();
   void advertiseTopics();
@@ -58,7 +58,7 @@ class TransformToTf {
   tf::TransformBroadcaster tf_broadcaster_;
   ros::Timer tf_timer_;
 
-  // Stores the position of the current hoop in the world frame
+  // Stores the current subscribed transform
   TransformationStamped transform_;
 
   // Parameters
